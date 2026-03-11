@@ -44,23 +44,26 @@
 
 ---
 
-## 4. Phân tích 2 Bug nghiêm trọng (Critical Bugs)
+### 4. Phân tích 2 Bug nghiêm trọng (Critical Bugs)
 
-### Bug 01: Hệ thống bị crash (màn hình trắng/lỗi 500) khi thực hiện xóa sinh viên
+#### Bug 01: Đăng nhập thất bại dù nhập đúng tài khoản hệ thống
 
-* **Mã lỗi:** KAN-10 (Jira) / Issue #5 (GitHub)
-* **Severity:** Critical (Blocker)
-* **Mô tả:** Khi nhấn nút "Xóa" trên một sinh viên bất kỳ, toàn bộ hệ thống bị treo hoặc thoát đột ngột.
-* **Nguyên nhân phân tích:** Do lỗi logic ở backend khi xử lý quan hệ dữ liệu (Foreign Key) mà không bắt ngoại lệ (Exception Handling).
-* **Kết quả:** Đã Fix và Verify thành công.
+* **Mã lỗi:** **KAN-5** (Jira) / Issue #1 (GitHub)
+* **Severity:** **Critical (Blocker)**
+* **Mô tả:** Người dùng nhập đúng Username và Password đã tồn tại trong cơ sở dữ liệu nhưng hệ thống vẫn báo lỗi "Thông tin không chính xác" hoặc không phản hồi.
+* **Tác động:** Đây là lỗi **Blocker** vì người dùng hoàn toàn không thể truy cập vào hệ thống để sử dụng các chức năng khác (Quản lý, Tìm kiếm...).
+* **Các bước tái hiện:** 1. Truy cập trang Login.
+2. Nhập tài khoản hợp lệ.
+3. Nhấn "Login" -> Hệ thống từ chối truy cập.
+* **Kết quả:** Đã Fix lỗi logic ở tầng Authentication và Verify thành công.
 
-### Bug 02: Password hiển thị rõ (Plain text) khi người dùng nhập liệu
+#### Bug 02: Hệ thống bị crash (màn hình trắng/lỗi 500) khi thực hiện xóa sinh viên
 
-* **Mã lỗi:** KAN-14 (Jira)
-* **Severity:** Critical (Security Risk)
-* **Mô tả:** Ô mật khẩu không được mã hóa bằng dấu `*` hoặc `•`, cho phép nhìn thấy mật khẩu trực tiếp trên màn hình.
-* **Tác động:** Vi phạm nghiêm trọng tiêu chuẩn bảo mật và quyền riêng tư của người dùng.
-* **Kết quả:** Đã sửa thuộc tính input thành `type="password"`.
+* **Mã lỗi:** **KAN-10** (Jira) / Issue #5 (GitHub)
+* **Severity:** **Critical (Major)**
+* **Mô tả:** Khi nhấn nút "Xóa" trên một sinh viên bất kỳ, hệ thống gặp lỗi runtime và không thể tiếp tục hoạt động.
+* **Nguyên nhân:** Lỗi xung đột dữ liệu khi xóa bản ghi có ràng buộc khóa ngoại.
+* **Kết quả:** Đã xử lý ngoại lệ (Try-Catch) và thông báo xác nhận trước khi xóa.
 
 ---
 
