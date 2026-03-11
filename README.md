@@ -50,17 +50,19 @@ Sinh viên đóng vai **nhân viên QA trong Sprint kiểm thử** để phát h
 
 # 3. Danh sách Bug
 
-| ID | Tiêu đề Bug | Priority | Status |
-|---|---|---|---|
-| BUG-01 | Login fails with correct password | Blocker | To Do |
-| BUG-02 | System crashes when deleting student | Blocker | To Do |
-| BUG-03 | Search returns incorrect results | High | To Do |
-| BUG-04 | Add student form allows empty name | High | To Do |
-| BUG-05 | Student list not refreshing after update | Medium | To Do |
-| BUG-06 | Duplicate student IDs allowed | Medium | To Do |
-| BUG-07 | Unauthorized user can access admin page | High | To Do |
-| BUG-08 | UI layout breaks on mobile | Low | To Do |
-
+| Bug ID | Mô tả lỗi | Priority | Status |
+|------|------|------|------|
+| KAN-15 | Hệ thống cho phép đăng ký với mật khẩu dưới 6 ký tự | Medium | Done |
+| KAN-14 | Mật khẩu hiển thị dạng plain text khi người dùng nhập | High | Done |
+| KAN-13 | Người dùng chưa đăng nhập vẫn có thể truy cập trang quản lý sinh viên | Critical | Done |
+| KAN-12 | Bảng danh sách sinh viên bị lệch giao diện khi nội dung quá dài | Low | Done |
+| KAN-11 | Danh sách sinh viên tải chậm khi số lượng dữ liệu lớn | Medium | Done |
+| KAN-10 | Không thể xóa sinh viên khỏi danh sách | Critical | Done |
+| KAN-9 | Không thể cập nhật thông tin sinh viên sau khi chỉnh sửa | High | Done |
+| KAN-8 | Chức năng tìm kiếm sinh viên không trả về kết quả | Medium | Done |
+| KAN-7 | Không lưu được thông tin khi thêm sinh viên mới | High | Done |
+| KAN-6 | Người dùng có quyền Student vẫn có thể xóa dữ liệu sinh viên | Critical | Done |
+| KAN-5 | Người dùng không thể đăng nhập mặc dù nhập đúng tài khoản và mật khẩu | Critical | Done |
 ---
 
 # 4. Phân tích 2 Bug nghiêm trọng
