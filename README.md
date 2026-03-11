@@ -122,15 +122,18 @@ Các biểu đồ được tạo từ Jira Dashboard.
 
 ### 📊 Bug by Status
 
-*(Thêm ảnh pie chart bug theo status)*
+<img width="1849" height="879" alt="Bug by Status" src="https://github.com/user-attachments/assets/23ac9a84-9625-4dc6-a0d8-4bd820e6bd44" />
+
 
 ### 📊 Bug by Priority
 
-*(Thêm ảnh pie chart bug theo priority)*
+<img width="1839" height="897" alt="Bug by Priority" src="https://github.com/user-attachments/assets/b1661cd9-1e61-44ae-8315-6bbbd215d77e" />
+
 
 ### 📊 Bug Trend theo thời gian
 
-*(Thêm ảnh biểu đồ bug trend)*
+<img width="1858" height="873" alt="Bug Trend theo thời gian" src="https://github.com/user-attachments/assets/13d8e85f-f61e-42e5-9654-f3b4cc9a253b" />
+
 
 Các biểu đồ này giúp theo dõi:
 
